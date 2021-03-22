@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Real Phone</title>
+        <link rel="stylesheet" href="aboutstyle.css">
+    </head>
+   
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Reload">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="phone.html">Home</a></li>
+                        <li><a href="Tv.html">Real Tv</a></li>
+                        <li><a href="Accessories.html">Accessories</a></li>
+                        <li><a href="About.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"> </div>
+                <img src="images/contactus.png" alt="reload" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        
+                        <h3>twitter </h3>
+                        <h5>@Realphones123</h5>
+                    </div>
+                
+                      <div class="feature two">
+                           <h3>Address</h3>
+                           <h5>Sathom Street,
+                               adayar,
+                               chennai
+                        
+                           </h5>      
+
+                                    </div>
+            
+                   <div class="feature three">
+                         <h3>Phone.No</h3>
+                         <br>
+                        <h5>9876543210</h5>
+                    </div>
+                
+                    <div class="feature four">
+                        
+                        
+                        <h3>Email</h3>
+                        <br>
+                        <h5>Realphones@gamil.com</h5>
+                    </div>
+                     </div>
+            </div>
+            <div class="controls">
+                  <img src="images/arrow.png" alt="reload" id="UpBtn">
+                  <h3>Contact</h3>
+                  <img src="images/arrow.png" alt="reload" id="DownBtn">
+            </div>
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var UpBtn = document.getElementById("UpBtn");
+            var DownBtn = document.getElementById("DownBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+
+            UpBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)"; 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            DownBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)"; 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+
+ 
+    </body>
+   
+</html>

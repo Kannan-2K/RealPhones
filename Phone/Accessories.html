@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Real Phone</title>
+        <link rel="stylesheet" href="Accessories.css">
+    </head>
+   
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Reload">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="phone.html">Home</a></li>
+                        <li><a href="Tv.html">Real Tv</a></li>
+                        <li><a href="Accessories.html">Accessories</a></li>
+                        <li><a href="About.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"> </div>
+                <img src="images/Accessories.jpg" alt="reload" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                       
+                        <h3>Back Cases</h3>
+                        
+                    </div>
+                
+                    <div class="feature two">
+                        
+                       <h3>HeadPhones</h3>
+                      
+                    </div>
+            
+                   <div class="feature three">
+                         <h3>Selfie Sticks</h3>
+                        
+                    </div>
+                
+                    <div class="feature four">
+                       
+                        
+                        <h3>USB & Others</h3>
+                        
+                    </div>
+                     </div>
+            </div>
+            <div class="controls">
+                  <img src="images/arrow.png" alt="reload" id="UpBtn">
+                  <h3>Accessories</h3>
+                  <img src="images/arrow.png" alt="reload" id="DownBtn">
+            </div>
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var UpBtn = document.getElementById("UpBtn");
+            var DownBtn = document.getElementById("DownBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+
+            UpBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)"; 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            DownBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)"; 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+   
+    </body>
+    
+</html>
